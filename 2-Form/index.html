@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" >
   <link rel="stylesheet" href="./style/style.css">
   <title>Форма регистрации</title>
 </head>
@@ -17,18 +17,19 @@
         Уже есть аккаунт? <a class="form__enter-link" href="#">Войти</a>
       </p>
       <div class="form__fields">
-        <input class="form__input form__input--company" type="text" name="company" id="company" placeholder="Компания">
+        <input class="form__input form__input--company" name="company" placeholder="Компания" />
 
-        <input class="form__input form__input--first-name" type="text" name="first-name" id="first-name"
-               placeholder="Имя">
-        <input class="form__input form__input--last-name" type="text" name="last-name" id="last-name"
-               placeholder="Фамилия">
+        <input class="form__input form__input--first-name" name="first-name"
+               placeholder="Имя" />
+        <input class="form__input form__input--last-name" name="last-name"
+               placeholder="Фамилия" />
 
-        <input class="form__input form__input--email" type="email" name="email" id="email" placeholder="E-mail">
+        <input class="form__input form__input--email" type="email" name="email"  placeholder="E-mail" />
         <button class="form__button form__button--submit" type="submit">Зарегистрироваться</button>
         <p class="form__agreement">
-          <input class="form__checkbox" type="checkbox" name="agreement" id="agreement">
-          <label for="agreement">Я прочитал и принимаю</label> <a href="#">Условия использования</a>
+          <input class="form__checkbox" type="checkbox" name="agreement" id="agreement" />
+          <label for="agreement">Я прочитал и принимаю <a class="form__checkbox-link" href="/">Условия
+            использования</a></label>
         </p>
       </div>
     </form>
