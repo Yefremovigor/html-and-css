@@ -25,19 +25,22 @@
         <li class="main-nav__item"><a href="/" class="main-nav__link">Backend</a></li>
       </ul>
     </nav>
-    <form class="page-header__search-form search-form" action="/search" method="get">
-      <label class="search-form__search-label" for="search-query">
-        <img src="./images/search.svg" alt="Поиск по блогу" />
-      </label>
-      <input class="search-form__search" type="search" name="search-query" id="search-query" placeholder="Поиск">
-    </form>
+    <search class="search" role="search">
+      <form class="page-header__search-form search-form" action="/search" method="get">
+        <label class="search-form__search-label" for="search-query">
+          <img src="./images/search.svg" alt="Поиск по блогу" />
+        </label>
+        <input class="search-form__search" type="search" name="search-query" id="search-query" placeholder="Поиск">
+      </form>
+    </search>
   </div>
 </header>
 <main class="page-content">
   <article class="post">
-    <p class="post__info">
-      <span class="post__category">FRONTEND</span><time datetime="2024-05-12" class="post__date">12 мая 2024</time>
-    </p>
+    <div class="post__info">
+      <span class="post__category">FRONTEND</span>
+      <time datetime="2024-05-12" class="post__date">12 мая 2024</time>
+    </div>
 
     <h1 class="post__title">Теория цвета - Как цвет влияет на поведение потребителей</h1>
 
@@ -48,10 +51,10 @@
            height="50"
       >
 
-      <p class="author__info">
+      <div class="author__info">
         <span class="author__name">Наталья Васильева</span>
         <span class="author__employee">Разработчик</span>
-      </p>
+      </div>
     </div>
 
     <img src="./images/post-image.jpg"
@@ -74,7 +77,8 @@
       </p>
       <p class="post__small-text">
         В исследовании «Влияние цвета на маркетинг» (<a class="post__text-link"
-          href="https://www.researchgate.net/publication/235320162_Impact_of_color_on_marketing">Impact of color on marketing</a>) говорится, что использование
+                                                        href="https://www.researchgate.net/publication/235320162_Impact_of_color_on_marketing">Impact
+        of color on marketing</a>) говорится, что использование
         разных цветов может существенно влиять на настроение и поведение потребителей. Утверждается, что от 60 до 90%
         покупателей (в зависимости от категории продукта) дают положительную или отрицательную оценку товару,
         основываясь только на его цвете.
