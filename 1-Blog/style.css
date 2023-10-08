@@ -27,7 +27,8 @@ body {
 .page-header__container {
     display: flex;
     margin: 0 auto;
-    width: 1242px;
+    padding: 0 10px;
+    max-width: 1200px;
 }
 
 .page-header__logo {
@@ -113,6 +114,9 @@ body {
     left: 18px;
 }
 
+.page-content {
+    padding: 0 10px;
+}
 
 .post__info {
     display: block;
@@ -146,7 +150,7 @@ body {
 }
 
 .post__title {
-    width: 525px;
+    max-width: 525px;
     margin: 0 auto 30px;
 
     text-align: center;
@@ -184,13 +188,16 @@ body {
 
 .post__image {
     display: block;
+    width: 100%;
+    max-width: 896px;
+    height: auto;
     margin: 0 auto 70px;
     border-radius: 6px;
 }
 
 .post__text-content {
     margin: 0 auto;
-    width: 708px;
+    max-width: 708px;
 }
 
 .post__text {
