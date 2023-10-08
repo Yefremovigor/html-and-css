@@ -13,31 +13,27 @@
   <title>Форма регистрации</title>
 </head>
 <body>
-<main class="page-content">
-  <section class="form-section">
-    <form class="form" action="/" method="post">
-      <h1 class="form__title">Регистрация</h1>
-      <p class="form__sub-title">
-        Уже есть аккаунт? <a class="form__enter-link" href="#">Войти</a>
-      </p>
-      <div class="form__fields">
-        <input class="form__input form__input--company" name="company" placeholder="Компания" />
+<form class="form" action="/" method="post">
+  <h1 class="form__title">Регистрация</h1>
+  <p class="form__sub-title">
+    Уже есть аккаунт? <a class="form__enter-link" href="#">Войти</a>
+  </p>
+  <div class="form__fields">
+    <input class="form__input form__input--company" name="company" placeholder="Компания" />
 
-        <input class="form__input form__input--first-name" name="first-name"
-               placeholder="Имя" />
-        <input class="form__input form__input--last-name" name="last-name"
-               placeholder="Фамилия" />
+    <input class="form__input form__input--first-name" name="first-name"
+           placeholder="Имя" />
+    <input class="form__input form__input--last-name" name="last-name"
+           placeholder="Фамилия" />
 
-        <input class="form__input form__input--email" type="email" name="email" placeholder="E-mail" />
-        <button class="form__button form__button--submit" type="submit">Зарегистрироваться</button>
-        <p class="form__agreement">
-          <input class="form__checkbox" type="checkbox" name="agreement" id="agreement" />
-          <label for="agreement">Я прочитал и принимаю <a class="form__checkbox-link" href="/">Условия
-            использования</a></label>
-        </p>
-      </div>
-    </form>
-  </section>
-</main>
+    <input class="form__input form__input--email" type="email" name="email" placeholder="E-mail" />
+    <button class="form__button form__button--submit" type="submit">Зарегистрироваться</button>
+    <p class="form__agreement">
+      <input class="form__checkbox" type="checkbox" name="agreement" id="agreement" />
+      <label for="agreement">Я прочитал и принимаю <a class="form__checkbox-link" href="/">Условия
+        использования</a></label>
+    </p>
+  </div>
+</form>
 </body>
 </html>

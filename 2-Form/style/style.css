@@ -7,33 +7,27 @@
     --activ-element-color: #089FE0;
 }
 
+* {
+    box-sizing: border-box;
+}
 
 body {
-    padding: 0;
     margin: 0;
+    padding: 10px 10px;
+    min-height: 100vh;
     font-family: "Open Sans", sans-serif;
     box-sizing: border-box;
-}
-
-.form-section {
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 10px 10px;
     background: var(--page-background);
-
-    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
 
 .form {
     display: flex;
     flex-wrap: wrap;
     padding: 70px 90px 90px;
-    width: 582px;
-    box-sizing: border-box;
+    max-width: 580px;
 
     border-radius: 10px;
     background: #FFFEFE;
@@ -71,14 +65,12 @@ body {
     margin-top: 45px;
     display: flex;
     flex-wrap: wrap;
+    row-gap: 22px;
 }
 
 .form__input {
-    display: block;
-    margin-bottom: 22px;
     padding: 9px 9px 11px;
     width: 100%;
-    box-sizing: border-box;
     border-radius: 5px;
     background: var(--input-background-color);
 
@@ -105,7 +97,8 @@ body {
 
 .form__input--first-name,
 .form__input--last-name {
-    width: 50%;
+    width: 180px;
+    flex-grow: 1;
 }
 
 .form__input--first-name {
@@ -157,8 +150,7 @@ body {
 }
 
 .form__agreement {
-    margin-top: 22px;
-    margin-bottom: 0;
+    margin: 0;
     font-size: 14px;
 }
 
@@ -169,15 +161,17 @@ body {
 }
 
 .form__checkbox + label {
-    display: inline-flex;
-    align-items: center;
+    display: block;
+    padding-left: 20px;
     user-select: none;
-    gap: 4px;
+    position: relative;
 }
 
 .form__checkbox + label::before {
     content: '';
-    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 15px;
     height: 16px;
     border-radius: 5px;
